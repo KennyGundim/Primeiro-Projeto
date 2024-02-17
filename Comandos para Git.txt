@@ -1,0 +1,54 @@
+COMANDOS GIT
+# Cria um arquivo git dentro da pasta#
+* git init
+
+# Verifica o status do repositório#
+* git status
+
+# Permite preparar um ou mais arquivos para serem incluidos ao controle de versão#
+* git add "nome do aquivo.ex"
+* git add .
+
+# Commita adiciona os arquivos ao controle de versão#
+* git commit -m "o que esta fazendo nessa versão"
+
+# Cadastra o úsuario e email caso esteja Commitando pela primeira vez#
+* git config --global user.email "exemple@exemple"
+* git config --global user.name "seu nome"
+
+#adicona o destino do repositório em nuvem#
+* git remote add origin (link)
+
+# Defini o caminho para Branch que quer enviar#
+(faça o login que irá aparecer após colocar esse comando, ""master" também pode ser subistituido por outro nome de Branch)
+* git push --set-upstream origin master
+
+# Puxando os arquivos para o servidor na nuvem#
+* git push
+
+# Vericiar histórico de atualizações#
+* git reflog
+
+# Navega entre as versões do código#
+* git reset --har +CódigoDaVersão
+
+# Como criar uma branch#
+* git brach +NomeDaNovaBranch
+(um dos nomes comuns para uma branch é staging que ainda não estão testadas em produção)
+
+# Para mostrar as Branchs disponíveis no nosso git#
+* git branch
+
+#Selecionar uma branch#
+* git checkout +NomeDaBranch
+
+# Une as Branchs#
+(para isso você precisa estar na brnch que quer unir)
+*git merge +NomeDaBranchQueQuerUnir
+
+#Atuliza as branchs do servidor para sua máquina local#
+* git pull 
+
+# Ignora um arquivo para nçau subir na controle de versão com comando "git add ."#
+* touch .gitignore
+(é necessario abrir o arquivo dentro da pasta e adionar no nome do arquivo ou pasta que você não deseja incluir exemplo: "segredos.png/") 
